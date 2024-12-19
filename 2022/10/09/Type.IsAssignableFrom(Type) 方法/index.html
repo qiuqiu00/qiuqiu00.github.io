@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Type.IsAssignableFrom(Type) 方法 | 秋天的枫林</title><meta name="author" content="秋"><meta name="copyright" content="秋"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Type.IsAssignableFrom(Type)  命名空间:System 程序集:System.Runtime.dll 确定指定类型 c 的实例是否能分配给当前类型的变量。  确定指定类型 c 的实例是否能分配给当前类型的变量。1public virtual bool IsAssignableFrom (Type? c); 参数 c (Type) 要与当前类型进行比较的类型。  返回 Bo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Type.IsAssignableFrom(Type) 方法">
+<meta property="og:url" content="http://qiuqiu00.github.io/2022/10/09/Type.IsAssignableFrom(Type)%20%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="秋天的枫林">
+<meta property="og:description" content="Type.IsAssignableFrom(Type)  命名空间:System 程序集:System.Runtime.dll 确定指定类型 c 的实例是否能分配给当前类型的变量。  确定指定类型 c 的实例是否能分配给当前类型的变量。1public virtual bool IsAssignableFrom (Type? c); 参数 c (Type) 要与当前类型进行比较的类型。  返回 Bo">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.pixabay.com/photo/2022/06/13/15/36/grain-7260250_960_720.jpg">
+<meta property="article:published_time" content="2022-10-09T01:23:35.000Z">
+<meta property="article:modified_time" content="2024-12-18T02:41:41.230Z">
+<meta property="article:author" content="秋">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.pixabay.com/photo/2022/06/13/15/36/grain-7260250_960_720.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://qiuqiu00.github.io/2022/10/09/Type.IsAssignableFrom(Type)%20%E6%96%B9%E6%B3%95/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Type.IsAssignableFrom(Type) 方法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-12-18 10:41:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://octodex.github.com/hulatocat/" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.pixabay.com/photo/2022/06/13/15/36/grain-7260250_960_720.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">秋天的枫林</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Type.IsAssignableFrom(Type) 方法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2022-10-09T01:23:35.000Z" title="发表于 2022-10-09 09:23:35">2022-10-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-18T02:41:41.230Z" title="更新于 2024-12-18 10:41:41">2024-12-18</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Type.IsAssignableFrom(Type) 方法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Type.IsAssignableFrom(Type)</p>
+<ul>
+<li>命名空间:System</li>
+<li>程序集:System.Runtime.dll</li>
+<li>确定指定类型 c 的实例是否能分配给当前类型的变量。</li>
+</ul>
+<h3 id="确定指定类型-c-的实例是否能分配给当前类型的变量。"><a href="#确定指定类型-c-的实例是否能分配给当前类型的变量。" class="headerlink" title="确定指定类型 c 的实例是否能分配给当前类型的变量。"></a>确定指定类型 c 的实例是否能分配给当前类型的变量。</h3><figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">virtual</span> <span class="built_in">bool</span> <span class="title">IsAssignableFrom</span> (<span class="params">Type? c</span>)</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="参数-c-Type"><a href="#参数-c-Type" class="headerlink" title="参数 c (Type)"></a>参数 c (Type)</h3><ul>
+<li>要与当前类型进行比较的类型。</li>
+</ul>
+<h3 id="返回-Boolean-如果满足下列任一条件，则为-true"><a href="#返回-Boolean-如果满足下列任一条件，则为-true" class="headerlink" title="返回 Boolean 如果满足下列任一条件，则为 true"></a>返回 Boolean 如果满足下列任一条件，则为 true</h3><ul>
+<li>c 和当前实例表示相同类型。</li>
+<li>c 是从当前实例直接或间接派生的。 如果继承于当前实例，则 c 是从当前实例直接派生的；如果继承于从当前实例继承的接连一个或多个类，则 c 是从当前实例间接派生的。</li>
+<li>当前实例是 c 实现的一个接口。</li>
+<li>c 是一个泛型类型参数，并且当前实例表示 c 的约束之一。</li>
+<li>c 表示一个值类型，并且当前实例表示 Nullable<c>（在 Visual Basic 中为 Nullable(Of c)）。</li>
+<li>如果不满足上述任何一个条件或者 c 为 false，则为 null。</li>
+</ul>
+<figure class="highlight c#"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Type mytype = <span class="keyword">typeof</span>(Book);</span><br><span class="line">Type mytest = <span class="keyword">typeof</span>(MyTest);</span><br><span class="line"><span class="built_in">bool</span> rs=mytype.IsAssignableFrom(mytest);</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">MyTest</span> : <span class="title">Book</span> &#123; </span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title">Book</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="built_in">string</span> Name &#123; <span class="keyword">get</span>; <span class="keyword">set</span>; &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://qiuqiu00.github.io">秋</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://qiuqiu00.github.io/2022/10/09/Type.IsAssignableFrom(Type)%20%E6%96%B9%E6%B3%95/">http://qiuqiu00.github.io/2022/10/09/Type.IsAssignableFrom(Type)%20%E6%96%B9%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://qiuqiu00.github.io" target="_blank">秋天的枫林</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.pixabay.com/photo/2022/06/13/15/36/grain-7260250_960_720.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/gh/overtrue/share.js@master/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/10/09/%E6%8A%BD%E8%B1%A1%E7%B1%BB%E3%80%81%E8%99%9A%E6%96%B9%E6%B3%95%E3%80%81%E6%8E%A5%E5%8F%A3/"><img class="prev-cover" src="http://picgo.imaybe.cn/mine/post_cover10.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">抽象类、虚方法、接口</div></div></a></div><div class="next-post pull-right"><a href="/2022/10/08/navicate%E4%BD%BF%E7%94%A8sqlserver%E6%8A%A5%E4%BB%A5%E4%B8%8B%E9%94%99%E8%AF%AF/"><img class="next-cover" src="https://cdn.pixabay.com/photo/2022/06/13/15/36/grain-7260250_960_720.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">navicate使用sqlserver报以下错误</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://octodex.github.com/hulatocat/" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">秋</div><div class="author-info__description">一名打杂的</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">29</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/qiuqiu00"><i class="fab fa-github"></i><span>关注</span></a></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%AE%E5%AE%9A%E6%8C%87%E5%AE%9A%E7%B1%BB%E5%9E%8B-c-%E7%9A%84%E5%AE%9E%E4%BE%8B%E6%98%AF%E5%90%A6%E8%83%BD%E5%88%86%E9%85%8D%E7%BB%99%E5%BD%93%E5%89%8D%E7%B1%BB%E5%9E%8B%E7%9A%84%E5%8F%98%E9%87%8F%E3%80%82"><span class="toc-number">1.</span> <span class="toc-text">确定指定类型 c 的实例是否能分配给当前类型的变量。</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E6%95%B0-c-Type"><span class="toc-number">2.</span> <span class="toc-text">参数 c (Type)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%94%E5%9B%9E-Boolean-%E5%A6%82%E6%9E%9C%E6%BB%A1%E8%B6%B3%E4%B8%8B%E5%88%97%E4%BB%BB%E4%B8%80%E6%9D%A1%E4%BB%B6%EF%BC%8C%E5%88%99%E4%B8%BA-true"><span class="toc-number">3.</span> <span class="toc-text">返回 Boolean 如果满足下列任一条件，则为 true</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2024/12/19/%E8%AE%B0%E5%BD%95myslq%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%A5%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" title="记录myslq的一些服务器配置以及使用该过程中遇到的问题"><img src="https://cdn.pixabay.com/photo/2016/04/18/22/05/seashells-1337565_960_720.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录myslq的一些服务器配置以及使用该过程中遇到的问题"/></a><div class="content"><a class="title" href="/2024/12/19/%E8%AE%B0%E5%BD%95myslq%E7%9A%84%E4%B8%80%E4%BA%9B%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE%E4%BB%A5%E5%8F%8A%E4%BD%BF%E7%94%A8%E8%AF%A5%E8%BF%87%E7%A8%8B%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/" title="记录myslq的一些服务器配置以及使用该过程中遇到的问题">记录myslq的一些服务器配置以及使用该过程中遇到的问题</a><time datetime="2024-12-19T01:00:00.000Z" title="发表于 2024-12-19 09:00:00">2024-12-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/12/18/hello-world/" title="Hello World"><img src="http://picgo.imaybe.cn/mine/post_cover9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2024/12/18/hello-world/" title="Hello World">Hello World</a><time datetime="2024-12-18T02:41:41.231Z" title="发表于 2024-12-18 10:41:41">2024-12-18</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/09/10/%E8%AE%B0%E5%BD%95C#%E5%8F%8D%E5%B0%84%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/" title="记录C#反射相关的一些知识"><img src="http://picgo.imaybe.cn/mine/post_cover9.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录C#反射相关的一些知识"/></a><div class="content"><a class="title" href="/2024/09/10/%E8%AE%B0%E5%BD%95C#%E5%8F%8D%E5%B0%84%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E7%9F%A5%E8%AF%86/" title="记录C#反射相关的一些知识">记录C#反射相关的一些知识</a><time datetime="2024-09-10T09:23:35.000Z" title="发表于 2024-09-10 17:23:35">2024-09-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/05/30/%E8%AE%B0%E5%BD%95mysql%E9%80%9A%E8%BF%87mysqldump%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E6%95%B0%E6%8D%AE%E5%BA%93/" title="记录mysql通过mysqldump备份还原数据库"><img src="http://picgo.imaybe.cn/mine/post_cover7.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录mysql通过mysqldump备份还原数据库"/></a><div class="content"><a class="title" href="/2024/05/30/%E8%AE%B0%E5%BD%95mysql%E9%80%9A%E8%BF%87mysqldump%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9F%E6%95%B0%E6%8D%AE%E5%BA%93/" title="记录mysql通过mysqldump备份还原数据库">记录mysql通过mysqldump备份还原数据库</a><time datetime="2024-05-30T09:23:35.000Z" title="发表于 2024-05-30 17:23:35">2024-05-30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/05/30/%E8%AE%B0%E5%BD%95%E9%93%B6%E6%B2%B3%E9%BA%92%E9%BA%9F%E9%83%A8%E7%BD%B2net%20core%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%BA%BA%E5%A4%A7%E9%87%91%E4%BB%93%E7%9A%84%E4%BD%BF%E7%94%A8/" title="记录银河麒麟部署net core项目和人大金仓的使用"><img src="http://picgo.imaybe.cn/mine/post_cover11.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="记录银河麒麟部署net core项目和人大金仓的使用"/></a><div class="content"><a class="title" href="/2024/05/30/%E8%AE%B0%E5%BD%95%E9%93%B6%E6%B2%B3%E9%BA%92%E9%BA%9F%E9%83%A8%E7%BD%B2net%20core%E9%A1%B9%E7%9B%AE%E5%92%8C%E4%BA%BA%E5%A4%A7%E9%87%91%E4%BB%93%E7%9A%84%E4%BD%BF%E7%94%A8/" title="记录银河麒麟部署net core项目和人大金仓的使用">记录银河麒麟部署net core项目和人大金仓的使用</a><time datetime="2024-05-30T01:36:35.000Z" title="发表于 2024-05-30 09:36:35">2024-05-30</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By 秋</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-heart.min.js" async="async" mobile="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
